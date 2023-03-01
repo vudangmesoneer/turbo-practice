@@ -30,3 +30,4 @@ yarn-error.log*
 
 # turbo
 .turbo
+apps/server/pino-logger.log
