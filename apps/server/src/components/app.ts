@@ -6,6 +6,7 @@ import cors from 'cors';
 import { getRootFolder } from 'lib';
 
 import router from '../routes';
+import api from '../routes/api';
 import appLogger from './logger';
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(getRootFolder(), 'public')));
 
 app.use('/', router);
+app.use('/api', api);
 
 // return OK to any incoming request
 app.use(function(req, res) {

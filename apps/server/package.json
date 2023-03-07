@@ -26,7 +26,8 @@
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "pino": "^8.11.0",
-    "lib": "*"
+    "lib": "*",
+    "mongodb": "^5.1.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
